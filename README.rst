@@ -27,15 +27,9 @@ a machine runing Debian.
 
       sudo chown ptomulik:ptomulik /home/www/pkg.example.com/
 
-4. Clone the initial repository structure into your directory::
+4. Download tarball from github and unpack it to repository dir::
 
-      cd /home/www/
-      git clone git@github.com:ptomulik/ptomulik-apt-repo.git pkg.example.com
-
-   or (over HTTPS)::
-
-      cd /home/www/
-      git clone https://github.com/ptomulik/ptomulik-apt-repo.git pkg.example.com
+      (cd /home/www/pkg.example.com && wget -O - https://github.com/ptomulik/ptomulik-apt-repo/archive/master.tar.gz | tar --strip-components 1 -zxf - )
 
 5. Configure apache to serve the repository::
 
