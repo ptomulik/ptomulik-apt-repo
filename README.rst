@@ -93,7 +93,7 @@ It's assumed, that the server is named ``pkg.example.com``, user is
       fusermount -u ~/ptomulik-apt-repo/docroot
 
    From now on, every maintenance on the repository requires mounting the
-   docroot again.
+   docroot again, as in point 3.
 
 Maintenance
 -----------
