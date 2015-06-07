@@ -1,2 +1,3 @@
 .gitignore export-ignore
 .placeholder export-ignore
+.gitattributes export-ignore
