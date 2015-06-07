@@ -1,0 +1,8 @@
+Name: incoming
+IncomingDir: incoming 
+Default: vivid
+Options: multiple_distributions
+MorgueDir: accepted
+LogDir: log
+TempDir: tmp
+Cleanup: unused_files
