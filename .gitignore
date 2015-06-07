@@ -1,0 +1,16 @@
+/docroot/*/accepted/*
+/docroot/*/db/*
+/docroot/*/dists/*
+/docroot/*/incoming/*
+/docroot/*/indices/*
+/docroot/*/log/*
+/docroot/*/pool/*
+/docroot/*/tmp/*
+!/docroot/*/accepted/.ht*
+!/docroot/*/db/.ht*
+!/docroot/*/dists/.ht*
+!/docroot/*/incoming/.ht*
+!/docroot/*/indices/.ht*
+!/docroot/*/log/.ht*
+!/docroot/*/pool/.ht*
+!/docroot/*/tmp/.ht*

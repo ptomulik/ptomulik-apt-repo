@@ -1,0 +1,26 @@
+Origin: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
+Label: Packages by Paweł Tomulik (Debian/jessie)
+Suite: stable
+Codename: jessie
+Architectures: amd64 i386 source
+Components: main non-free contrib
+Description: This repository contains Debian packages developed by Paweł Tomulik
+SignWith: ptomulik@meil.pw.edu.pl
+
+Origin: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
+Label: Packages by Paweł Tomulik (Debian/stretch)
+Suite: testing
+Codename: stretch
+Architectures: amd64 i386 source
+Components: main non-free contrib
+Description: This repository contains Debian packages developed by Paweł Tomulik
+SignWith: ptomulik@meil.pw.edu.pl
+
+Origin: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
+Label: Packages by Paweł Tomulik (Debian/sid)
+Suite: unstable
+Codename: sid
+Architectures: amd64 i386 source
+Components: main non-free contrib
+Description: This repository contains Debian packages developed by Paweł Tomulik
+SignWith: ptomulik@meil.pw.edu.pl

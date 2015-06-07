@@ -1,0 +1,29 @@
+#! /bin/sh
+
+# Process packages uploaded to the incoming repository
+
+set -e
+
+DOCDIR=docroot
+SCRIPTDIR=`dirname $0`
+DOCROOT="${SCRIPTDIR}/${DOCDIR}"
+REPREPRO=/usr/bin/reprepro
+
+if [ $# -ge 1 ]; then
+  REPO=$1;
+  shift;
+else
+  echo "error: missing repository name" >&2;
+  echo "usage:   $0 <repo>" >&2;
+  echo "example: $0 debian" >&2;
+  exit 1;
+fi
+
+if [ -d "${DOCROOT}/${REPO}" ]; then
+  BASEDIR="${DOCROOT}/${REPO}"
+else
+  echo "error: repository ${REPO} not found" >&2;
+  exit 1;
+fi
+
+( cd ${BASEDIR} && ${REPREPRO} processincoming incoming )
