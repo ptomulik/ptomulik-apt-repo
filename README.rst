@@ -8,6 +8,9 @@ repository.
 Installation
 ------------
 
+On bare Debian server
+`````````````````````
+
 This assumes the repo to be installed under ``/home/www/pkg.example.com/`` on
 a machine runing Debian.
 
@@ -57,11 +60,49 @@ a machine runing Debian.
       sudo a2ensite 001-pkg
       sudo service apache2 reload
 
-Scripts
--------
 
-process-incoming
-````````````````
+On a machine already running apache server (without shell access)
+`````````````````````````````````````````````````````````````````
+
+In this setup we end up with the installation split among two parts.
+
+- a http server, which only serves the packages uploaded to repository,
+- a PC running Debian which holds some scripts and is used for repo maintenance.
+
+We assume that we have no access to shell on the WWW server, thus all the
+maintenance actions will be performed on our PC running Debian. We'll achieve
+this by mounting remote docroot with ``sshfs`` to our local installation.
+
+It's assumed, that the server is named ``pkg.example.com``, user is
+``ptomulik`` and the document root on the WWW server used for apt repository
+(as seen throught ``sftp``) is ``/www/pkg.example.com/apt``.
+
+1. On PC install ``sshfs``::
+
+      sudo apt-get install sshfs
+
+2. On PC create directory, where the repository will be held, together with
+   docroot::
+
+      mkdir -p ~/ptomulik-apt-repo/docroot
+
+3. Mount the server's document root do our ``docroot``::
+
+      sshfs ptomulik@pkg.example.com:/www/pkg.exapmle.com/apt ~/ptomulik-apt-repo/docroot
+
+4. Download tarball from github and unpack it to repository dir::
+
+      (cd ~/ptomulik-apt-repo && wget -O - https://github.com/ptomulik/ptomulik-apt-repo/archive/master.tar.gz | tar --strip-components 1 -zxf - )
+
+5. That's all for now, you may unmount the remote docroot::
+
+      fusermount -u ~/ptomulik-apt-repo/docroot
+
+   From now on, every maintenance on the repository requires mounting the
+   docroot again.
+
+Maintenance
+-----------
 
 .. _apache2: http://httpd.apache.org/
 .. _reprepro: http://mirrorer.alioth.debian.org/
