@@ -44,9 +44,16 @@ a machine runing Debian.
 
       sudo vim /etc/apache2/sites-available/001-pkg.conf
 
-7. Enable the site::
+   note: you should at least adjust ``ServerName``, otherwise default apache
+   site will be served.
 
-      sudo a2dissite 000-default
+7. Enable ``mod_rewrite``::
+
+      sudo a2enmod rewrite
+
+8. Enable the site::
+
+      # sudo a2dissite 000-default # this is optional, disables default site
       sudo a2ensite 001-pkg
       sudo service apache2 reload
 
