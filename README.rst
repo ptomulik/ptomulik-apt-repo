@@ -11,9 +11,9 @@ Installation
 This assumes the repo to be installed under ``/home/www/pkg.example.com/`` on
 a machine runing Debian.
 
-1. Install apache2_::
+1. Install apache2_ and reprepro_::
 
-      sudo apt-get install apache2
+      sudo apt-get install apache2 reprepro
 
 2. Create directory for the repo::
 
@@ -64,4 +64,5 @@ process-incoming
 ````````````````
 
 .. _apache2: http://httpd.apache.org/
+.. _reprepro: http://mirrorer.alioth.debian.org/
 
