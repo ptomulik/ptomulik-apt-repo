@@ -40,10 +40,12 @@ a machine runing Debian.
       sudo cp share/apache2-site.conf /etc/apache2/sites-available/001-pkg.conf
 
 6. Adjust your site settings in ``/etc/apache2/sites-available/001-pkg.conf``
-   (``ServerName``, ``ServerAdmin`` and ``DocRoot``)
+   (``ServerName``, ``ServerAdmin`` and ``DocRoot``)::
 
+      sudo vim /etc/apache2/sites-available/001-pkg.conf
 
 7. Enable the site::
+
       sudo a2dissite 000-default
       sudo s2ensite 001-pkg
       sudo service apache2 reload
