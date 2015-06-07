@@ -107,16 +107,24 @@ Maintenance
 In the following examples ``$REPOROOT`` points to the ``docroot`` directory
 within our installation.
 
+Creating symlinks between codenames and suites
+``````````````````````````````````````````````
+
+This creates symlinks in repository, such that ``unstable`` points to ``sid``
+etc.::
+
+    (cd ${REPOROOT}/debian/ && reprepro createsymlinks)
+
 Processing incomming packages
 `````````````````````````````
 
 Processing all incoming packages in ``debian`` repository::
 
-    (cd "${REPODIR}/debian && reprepro processincoming incoming)
+    (cd "${REPOROOT}/debian && reprepro processincoming incoming)
 
 The same for ``ubuntu``::
 
-    (cd "${REPODIR}/ubuntu && reprepro processincoming incoming)
+    (cd "${REPOROOT}/ubuntu && reprepro processincoming incoming)
 
 
 .. _apache2: http://httpd.apache.org/
