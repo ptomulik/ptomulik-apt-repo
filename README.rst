@@ -61,8 +61,8 @@ a machine runing Debian.
       sudo service apache2 reload
 
 
-On a machine already running apache server (without shell access)
-`````````````````````````````````````````````````````````````````
+On existing WWW server without shell access
+```````````````````````````````````````````
 
 In this setup we end up with the installation split among two parts.
 
