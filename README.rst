@@ -47,7 +47,7 @@ a machine runing Debian.
 7. Enable the site::
 
       sudo a2dissite 000-default
-      sudo s2ensite 001-pkg
+      sudo a2ensite 001-pkg
       sudo service apache2 reload
 
 Scripts
