@@ -104,6 +104,20 @@ It's assumed, that the server is named ``pkg.example.com``, user is
 Maintenance
 -----------
 
+In the following examples ``$REPOROOT`` points to the ``docroot`` directory
+within our installation.
+
+Processing incomming packages
+`````````````````````````````
+
+Processing all incoming packages in ``debian`` repository::
+
+    (cd "${REPODIR}/debian && reprepro processincoming incoming)
+
+The same for ``ubuntu``::
+
+    (cd "${REPODIR}/ubuntu && reprepro processincoming incoming)
+
+
 .. _apache2: http://httpd.apache.org/
 .. _reprepro: http://mirrorer.alioth.debian.org/
-
