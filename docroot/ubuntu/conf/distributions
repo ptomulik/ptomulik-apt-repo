@@ -2,7 +2,7 @@ Origin: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
 Label: Packages by Paweł Tomulik (Ubuntu/jessie)
 Codename: lucid 
 Architectures: amd64 i386 source
-Components: main non-free contrib
+Components: main universe multiverse restricted
 Description: This repository contains Ubuntu packages developed by Paweł Tomulik
 SignWith: ptomulik@meil.pw.edu.pl
 
@@ -10,7 +10,7 @@ Origin: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
 Label: Packages by Paweł Tomulik (Ubuntu/stretch)
 Codename: precise
 Architectures: amd64 i386 source
-Components: main non-free contrib
+Components: main universe multiverse restricted
 Description: This repository contains Ubuntu packages developed by Paweł Tomulik
 SignWith: ptomulik@meil.pw.edu.pl
 
@@ -18,7 +18,7 @@ Origin: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
 Label: Packages by Paweł Tomulik (Ubuntu/sid)
 Codename: trusty
 Architectures: amd64 i386 source
-Components: main non-free contrib
+Components: main universe multiverse restricted
 Description: This repository contains Ubuntu packages developed by Paweł Tomulik
 SignWith: ptomulik@meil.pw.edu.pl
 
@@ -26,7 +26,7 @@ Origin: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
 Label: Packages by Paweł Tomulik (Ubuntu/sid)
 Codename: utopic 
 Architectures: amd64 i386 source
-Components: main non-free contrib
+Components: main universe multiverse restricted
 Description: This repository contains Ubuntu packages developed by Paweł Tomulik
 SignWith: ptomulik@meil.pw.edu.pl
 
@@ -34,6 +34,6 @@ Origin: Paweł Tomulik <ptomulik@meil.pw.edu.pl>
 Label: Packages by Paweł Tomulik (Ubuntu/sid)
 Codename: vivid
 Architectures: amd64 i386 source
-Components: main non-free contrib
+Components: main universe multiverse restricted
 Description: This repository contains Ubuntu packages developed by Paweł Tomulik
 SignWith: ptomulik@meil.pw.edu.pl
